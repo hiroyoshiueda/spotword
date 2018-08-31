@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /twitter/
+Disallow: /openid/
+Disallow: /book/save_comment_api
+Disallow: /book/save_evaluate_api
+Allow: /

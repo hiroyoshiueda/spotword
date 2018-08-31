@@ -1,0 +1,36 @@
+Options -Indexes
+
+RewriteEngine on
+RewriteRule ^book/([0-9]+)/$ /index.php?page=book/detail&id=$1 [L,QSA]
+RewriteRule ^book/([0-9]+)/chapter/([0-9]+)/$ /index.php?page=book/detail&id=$1&chapter=$2 [L,QSA]
+#RewriteRule ^book/([0-9]+)/epub/$ /index.php?page=book/epub&id=$1 [L,QSA]
+RewriteRule ^book/([0-9]+)/book-([0-9]+)\.epub$ /index.php?page=book/epub&id=$1 [L,QSA]
+RewriteRule ^(book/.*)$ /index.php?page=$1 [L,QSA]
+RewriteRule ^reader/([0-9]+)/$ /index.php?page=reader/index&id=$1 [L,QSA]
+RewriteRule ^reader/([0-9]+)/epub/(.+)$ /index.php?page=reader/get_epub_file&id=$1&file=$2 [L,QSA]
+RewriteRule ^list/category/$ /index.php?page=list/category [L,QSA]
+RewriteRule ^list/category/([0-9]+)/$ /index.php?page=list/category&id=$1 [L,QSA]
+RewriteRule ^(list/.*)$ /index.php?page=$1 [L,QSA]
+RewriteRule ^(rss/.*)$ /index.php?page=$1 [L,QSA]
+RewriteRule ^(twitter/.*)$ /index.php?page=$1 [L,QSA]
+RewriteRule ^(openid/.*)$ /index.php?page=$1 [L,QSA]
+RewriteRule ^user/edit/change_password$ /index.php?page=user/edit/change&mode=password [L,QSA]
+RewriteRule ^user/edit/change_email$ /index.php?page=user/edit/change&mode=email [L,QSA]
+RewriteRule ^(user/.*)$ /index.php?page=$1 [L,QSA]
+RewriteRule ^(service/.*)$ /index.php?page=$1 [L,QSA]
+RewriteRule ^(contact/.*)$ /index.php?page=$1 [L,QSA]
+RewriteRule ^(account/.*)$ /index.php?page=$1 [L,QSA]
+RewriteRule ^login$ /index.php?page=index/login [L,QSA]
+RewriteRule ^logout$ /index.php?page=index/logout [L,QSA]
+RewriteRule ^rule$ /index.php?page=index/rule [L,QSA]
+RewriteRule ^privacy$ /index.php?page=index/privacy [L,QSA]
+RewriteRule ^about$ /index.php?page=index/about [L,QSA]
+RewriteRule ^([0-9a-zA-Z]{1}[-0-9a-zA-Z]{2,18}[0-9a-zA-Z]{1})/$ /index.php?page=mypage/&uname=$1 [L,QSA]
+RewriteRule ^sitemap\.xml$ /index.php?page=index/sitemap [L]
+
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule ^mypage/([^/]+)/$ /index.php?page=user/mypage/&uname=$1 [L,QSA]
+#RewriteRule (.+) /index.php?page=$1 [L,QSA]
+
+ErrorDocument 404 /index.php?page=index/notfound

@@ -1,0 +1,47 @@
+@charset "utf-8";
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td,iframe {
+	margin:0;
+	padding:0;
+}
+body {
+	font:13px/1.4 "Hiragino Kaku Gothic Pro","ヒラギノ角ゴ Pro W3","Meiryo","メイリオ","Osaka","MS Gothic",arial,helvetica,clean,sans-serif;
+	color:#3c3c3c;
+}
+/* for IE-mac,IE6 */
+* html th,* html td {
+	font-size:13px;
+	color:#3c3c3c;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+img, fieldset { border:0; }
+a {
+	color: #5b4713;
+	text-decoration: underline;
+	cursor: pointer;
+}
+a:hover {
+	color: #947420;
+	text-decoration: underline;
+}
+strong {
+	color:#3c3c3c;
+}
+ul {
+	list-style:none outside none;
+}
+input, textarea, select {
+	font-family:inherit;
+	font-size:inherit;
+	font-weight:inherit;
+}
+button {
+	background:none repeat scroll 0 0 transparent;
+	border:medium none;
+	cursor:pointer;
+	margin:0;
+	padding:0;
+}
+input[type=submit], input[type=button] { padding: 2px 4px; }

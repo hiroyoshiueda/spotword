@@ -1,0 +1,2 @@
+#ランキング集計
+3 0 * * * /apps/spotword/batch/batch.sh BatchRankingDaily

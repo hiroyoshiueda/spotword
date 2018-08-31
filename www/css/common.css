@@ -1,0 +1,41 @@
+@charset "utf-8";
+li.with_dot {
+	background:transparent url("../img/with_dot.png") no-repeat;
+	padding-left:8px;
+}
+.clearfix { display:block; }
+.clear { clear: both; }
+.hide { display:none; }
+div.errormsg {
+	background-color:#FFD5D7;
+	border:1px solid #EFB3B5;
+	padding:10px;
+	margin-bottom:20px;
+}
+div.successmsg {
+	background-color:#E3F5D8;
+	border:1px solid #B5E399;
+	padding:10px;
+	margin-bottom:20px;
+}
+div.infomsg {
+	background-color:#ffc;
+	border:1px solid #ffcc35;
+	padding:10px;
+	margin-bottom:20px;
+}
+p.errormsg-bg {
+	color:#f00;
+	padding:2px 0;
+}
+p.notice {
+	font-size: 11px;
+	color: #666;
+}
+img.icon-middle { vertical-align: middle; }
+input.ime-on, textarea.ime-on { ime-mode:active; }
+input.ime-off, textarea.ime-off { ime-mode:disabled; }
+#autosave-msg{ color:#f00; }
+div.pageinfo { color:#666; font-size: 88%; }
+div.pager { font-size: 140%; }
+div.pager a { margin:0 0 0 10px; }
